@@ -37,8 +37,7 @@ This project implements a full machine learning pipeline to forecast future stoc
 ├── predict.py                # Generates future predictions
 ├── AAPL.csv                  # Raw stock data
 ├── processed_stock_data.csv  # Cleaned & normalized data
-├── patchtst_stock_model.pth  # Trained model weights
-└── requirements.txt          # Python dependencies
+└── patchtst_stock_model.pth  # Trained model weights
 ```
 
 ---
