@@ -80,22 +80,22 @@ pip install -r requirements.txt
 
 Run the scripts in the following order:
 
-### ✅ Step 1: Fetch Stock Data
+###  Step 1: Fetch Stock Data
 ```bash
 python fetch_data.py
 ```
 
-### ✅ Step 2: Preprocess the Data
+###  Step 2: Preprocess the Data
 ```bash
 python preprocess.py
 ```
 
-### ✅ Step 3: Train the Model
+###  Step 3: Train the Model
 ```bash
 python train_model.py
 ```
 
-### ✅ Step 4: Start the Flask Server
+###  Step 4: Start the Flask Server
 ```bash
 python app.py
 ```
