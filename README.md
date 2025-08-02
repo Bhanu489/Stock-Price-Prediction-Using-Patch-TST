@@ -14,6 +14,8 @@ This project implements a full machine learning pipeline to forecast future stoc
 - **🌐 REST API**: Serve future stock predictions through a GET API endpoint.
 
 ---
+## Project Architecture
+![Uploading image.png…]()
 
 ## 🛠️ Tech Stack
 
