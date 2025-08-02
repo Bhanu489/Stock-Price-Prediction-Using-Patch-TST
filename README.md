@@ -15,7 +15,7 @@ This project implements a full machine learning pipeline to forecast future stoc
 
 ---
 ## Project Architecture
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/7017b371-e817-4e3e-8624-28dd373707eb" />
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/7017b371-e817-4e3e-8624-28dd373707eb" />
 
 
 ## 🛠️ Tech Stack
