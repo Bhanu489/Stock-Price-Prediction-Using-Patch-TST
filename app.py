@@ -1,19 +1,18 @@
 from flask import Flask, request, jsonify
-import torch
+import joblib
 import numpy as np
-from predict import predict_future
-from flask import Flask, jsonify, request
 
+app = Flask(_name_)
 
+# Load model
+model = joblib.load('train_model.pkl')  # Make sure this is the correct path
 
-app = Flask(__name__)
-
-@app.route("/predict", methods=["GET"])
+@app.route('/predict', methods=['POST'])
 def predict():
-    days = int(request.args.get("days", 10))  # Default: 10 days
-    predictions = predict_future(days)
-    return jsonify({"predictions": predictions.tolist()})
+    data = request.get_json()
+    features = np.array(data['features']).reshape(1, -1)
+    prediction = model.predict(features)
+    return jsonify({'prediction': prediction.tolist()})
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
-
+if _name_ == '_main_':
+    app.run(debug=True)
